@@ -1,0 +1,18 @@
+name: kg_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.9
+  - ipykernel
+  - pip=25.1.1
+  - langchain=0.3.21
+  - langgraph=0.3.20
+  - pymupdf=1.26.1
+  - ragas=0.3.0
+  - faiss=1.9.0
+  - sentence-transformers=5.0.0
+  - pip:
+      - langchain-huggingface==0.3.1
+      - langchain-ollama==0.3.6
+      
