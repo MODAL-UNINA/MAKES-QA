@@ -55,10 +55,10 @@ python qa.py --query "What are the main methods discussed?"
 The default CONFIG_PATH is `configs/config_qa.yaml`, which defines parameters for the question answering pipeline.
 
 ```yaml
-model_name: qwen2.5:14b                  
-embedding_model: sentence-transformers/all-MiniLM-L6-v2  
-top_k: 5                              
-kg_path: results/triples.pkl         
+kg_path: "results/triples.pkl"
+model_name: "qwen2.5:32b"
+embedding_model: "allenai/scibert_scivocab_uncased"
+top_k: 5       
 ```
 
 ### 3. Evaluation
