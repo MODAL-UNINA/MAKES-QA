@@ -1,0 +1,5 @@
+kg_path: "results/triples.pkl"
+model_name: "qwen2.5:32b"
+embedding_model: "allenai/scibert_scivocab_uncased"
+top_k: 5
+

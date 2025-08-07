@@ -1,0 +1,5 @@
+default_model: qwen2.5:14b
+overrides:
+  EntityExtractorAgent: qwen2.5:32b
+  RelationExtractorAgent: qwen2.5:32b
+
