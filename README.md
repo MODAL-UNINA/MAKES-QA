@@ -11,7 +11,7 @@ This project requires a local Ollama instance to run language models. All setup 
 ## Requirements
 To set up the environment, create a python environment using the provided kg_env.yaml file:
 ```bash
-conda env create -f kg_env.yml
+conda env create -f kg_env.yaml
 conda activate kg_env
 ```
 
