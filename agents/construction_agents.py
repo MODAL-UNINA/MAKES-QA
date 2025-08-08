@@ -157,6 +157,10 @@ class EntityExtractorAgent:
             - Metric or Evaluation Criterion
             - Theory or Framework
 
+            ## Constraints:
+             - Return **no more than 10 entities**, and **only the most relevant ones** based on their centrality and semantic value.
+             - **Do not extract always 10 entities**: return fewer than 10 if fewer entities meet the criteria clearly.
+        
             If no clearly relevant entities are found, return an empty list.
 
             Do not include explanations or commentary. 
@@ -231,6 +235,10 @@ class RelationExtractorAgent:
             - The **references or prior works** that a method or idea is based on
             - The **key findings** or conclusions reached
             - The **core concepts** discussed and how they interact
+
+            ## Constraints:
+             - Return **no more than 5 relationships**, **only the most relevant** based on clarity and importance.
+             - **Do not extract always 5 relationship**: return fewer than 5 if fewer valid relations are clearly supported by the text.
 
             Respond with **only the extracted relationships**. 
             """
