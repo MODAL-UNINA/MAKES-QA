@@ -109,7 +109,7 @@ class PreProcessingAgent:
         )
         chain = prompt | self.llm.with_structured_output(Summary)
         summarized_chunks = []
-        for chunk in chunks[:1]:
+        for chunk in chunks:
             response = chain.invoke({"chunk": chunk, "research_topics": research_topics})
             summarized_chunks.append(response.summary)
 
